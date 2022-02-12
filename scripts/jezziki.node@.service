@@ -1,0 +1,18 @@
+[Unit]
+Description=Jezziki App Node #%i
+After=postgresql.service
+StartLimitIntervalSec=400
+StartLimitBurst=3
+PartOf=jezziki.nodes.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5
+WorkingDirectory=/home/admin/prod/jezziki-app
+ExecStart=/bin/bash -lc 'sudo sh /home/admin/prod/jezziki-app/runapp.sh %i'
+ExecStop=/bin/bash -lc 'sudo sh /home/admin/prod/jezziki-app/stopapp.sh'
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

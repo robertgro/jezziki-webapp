@@ -1,0 +1,13 @@
+---
+  # default jezziki proxy server config
+  name: "http/s proxy"
+  debug: true
+  port: "80"
+  host: "localhost"
+  ssl: false
+  paths:
+    cert: "../static/dist/certs/lhcrt.pem"
+    key: "../static/dist/certs/lhkey.pem"
+    pol: "logs/jezziki-proxy.pol.log"
+    nodes: "nodes.json"
+

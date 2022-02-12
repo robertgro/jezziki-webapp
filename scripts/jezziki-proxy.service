@@ -1,0 +1,17 @@
+[Unit]
+Description=Jezziki Load Balancer Service
+After=network.target
+StartLimitIntervalSec=400
+StartLimitBurst=3
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5
+WorkingDirectory=/home/admin/prod/jezziki-proxy
+ExecStart=/bin/bash -lc 'sudo sh /home/admin/prod/jezziki-proxy/runproxy.sh'
+ExecStop=/bin/bash -lc 'sudo sh /home/admin/prod/jezziki-proxy/stopproxy.sh'
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

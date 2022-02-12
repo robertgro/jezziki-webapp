@@ -1,0 +1,15 @@
+html, body {
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-size: 1.0em !important;
+    line-height: 1.5 !important;
+    color:#000920 !important;
+    background:#17d4d2 !important;
+    margin: 0;
+    width: 100%;
+    font-weight: 600;
+}
+
+.board {
+    width: 450px;
+}

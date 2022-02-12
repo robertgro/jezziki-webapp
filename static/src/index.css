@@ -1,0 +1,26 @@
+html, body {
+    height: 100%;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    color: lightsteelblue !important;
+}
+
+header {
+    height: 100px;
+}
+
+main {
+    min-height: calc(100% - 175px);
+}
+
+
+article {
+    min-height: calc(100vh - 175px);
+}
+
+footer {
+    height: 75px;
+    position:relative; 
+    bottom:0;
+}

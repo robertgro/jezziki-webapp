@@ -1,0 +1,25 @@
+{{ define "script" }}
+
+    {{ if .utils }}
+        {{ range .utils }}
+        <script src="../src/app/utils/{{.}}.js" nonce="{{$.token}}"></script>
+        {{ end }}
+    {{ end }}
+
+    <script nonce="{{$.token}}" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" integrity="sha512-kp7YHLxuJDJcOzStgd6vtpxr4ZU9kjn77e6dBsivSz+pUuAuMlE2UTdKB7jjsWT84qbS8kdCWHPETnP/ctrFsA==" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8"></script>
+    <script nonce="{{$.token}}" src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js" integrity="sha512-qlzIeUtTg7eBpmEaS12NZgxz52YYZVF5myj89mjJEesBd/oE9UPsYOX2QAXzvOAZYEvQohKdcY8zKE02ifXDmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script nonce="{{$.token}}" src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js" integrity="sha512-9jGNr5Piwe8nzLLYTk8QrEMPfjGU0px80GYzKZUxi7lmCfrBjtyCc1V5kkS5vxVwwIB7Qpzc7UxLiQxfAN30dw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    {{if .accessGranted}}
+        <script type="text/javascript" src="5fzt78g4A7fnb882/dist/dash/jodit.min.js" nonce="{{$.token}}"></script>
+    {{end}}
+
+    {{ if .components }}
+        {{ range .components }}
+        <script type="text/babel" src="../src/app/components/{{.}}.js" nonce="{{$.token}}" defer></script>
+        {{ end }}
+    {{ end }}
+
+    <script  type="text/babel" src="../src/app/app.js" nonce="{{$.token}}" defer></script>
+    <script type="text/babel" src="../src/index.js" nonce="{{$.token}}" defer></script>
+{{ end }}

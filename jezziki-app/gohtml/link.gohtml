@@ -1,0 +1,16 @@
+{{ define "link" }}
+    <link rel="icon" type="image/x-icon" href="{{.favicon}}">
+    
+    {{ if .stylesheets }}
+        {{ range $csshref := .stylesheets}}
+            <link rel="stylesheet" href="{{$csshref}}" />
+        {{ end }}
+    {{ end }}
+
+    {{if .accessGranted}}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <link type="text/css" rel="stylesheet" href="5fzt78g4A7fnb882/dist/dash/jodit.min.css" />
+        <link type="text/css" rel="stylesheet" href="5fzt78g4A7fnb882/dist/dash/worker.css" />
+    {{end}}
+
+{{ end }}

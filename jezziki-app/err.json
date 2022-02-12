@@ -1,0 +1,59 @@
+{
+    "codes": [
+      {
+        "code": "400",
+        "title": "Bad Request",
+        "msg": "The server cannot process the request due to something that is perceived to be a client error."
+      },
+      {
+        "code": "401",
+        "title": "Unauthorized",
+        "msg": "The requested resource requires an authentication."
+      },
+      {
+        "code": "403",
+        "title": "Access Denied",
+        "msg": "The requested resource requires an authentication."
+      },
+      {
+        "code": "404",
+        "title": "Resource not found",
+        "msg": "The requested resource could not be found but may be available again in the future."
+      },
+      {
+        "code": "500",
+        "title": "Webservice currently unavailable",
+        "msg": "An unexpected condition was encountered. Our service team has been dispatched to bring it back online."
+      },
+      {
+        "code": "501",
+        "title": "Not Implemented",
+        "msg": "The Webserver cannot recognize the request method."
+      },
+      {
+        "code": "502",
+        "title": "Webservice currently unavailable",
+        "msg": "We&#39;ve got some trouble with our backend upstream cluster. Our service team has been dispatched to bring it back online."
+      },
+      {
+        "code": "503",
+        "title": "Webservice currently unavailable",
+        "msg": "We&#39;ve got some trouble with our backend upstream cluster. Our service team has been dispatched to bring it back online."
+      },
+      {
+        "code": "520",
+        "title": "Origin Error - Unknown Host",
+        "msg": "The requested hostname is not routed. Use only hostnames to access resources."
+      },
+      {
+        "code": "521",
+        "title": "Webservice currently unavailable",
+        "msg": "We&#39;ve got some trouble with our backend upstream cluster. Our service team has been dispatched to bring it back online."
+      },
+      {
+        "code": "533",
+        "title": "Scheduled Maintenance",
+        "msg": "This site is currently down for maintenance. Our service team is working hard to bring it back online soon."
+      }
+    ]
+  }

@@ -1,0 +1,47 @@
+{{define "dash"}}
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>{{.title}}</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+            <link rel="stylesheet" href="/5fzt78g4A7fnb882/dist/dash/dash.css">
+        </head>
+        <body>
+         <div class="container-fluid mx-auto h-100">
+            <div class="row align-items-center h-50 justify-content-center">
+                
+                <div class="container text-center board">
+                    <div class="row">
+                        <div class="col">
+                            <img src="/5fzt78g4A7fnb882/dist/dash/dash.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col p-2">
+                            <form id="opform" class="form-inline" action="5fzt78g4A7fnb882/token" method="post">
+                                <div class="form-group">
+                                    <label for="inputTokenID">Enter Token-ID</label>
+                                    <input type="password" id="inputTokenID" class="form-control mx-sm-3" aria-describedby="tokenHelpInline" name="token">
+                                    <small id="tokenHelpInline">
+                                    Required
+                                    </small>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col text-right">
+                            <button form="opform" type="submit" class="btn btn-primary btn-sm">Send Request</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+           {{ template "scripts" . }}
+        </body>
+    </html>
+{{ end }}
+{{ template "dash" . }}

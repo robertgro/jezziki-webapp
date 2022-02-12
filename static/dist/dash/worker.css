@@ -1,0 +1,126 @@
+textarea#editor {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+ul i.navaddbtn {
+    position: absolute;
+    margin-top: 15px;
+    left: 233px;
+    color: #9ACD32;
+    z-index: 1;
+}
+
+ul i.navaddbtn:hover {
+    color: #bff799;
+    cursor: pointer;
+}
+
+ul i.navdelbtn {
+    position: absolute;
+    margin-top: 15px;
+    left: 260px;
+    color: #bd2121;
+    z-index: 1;
+}
+
+ul i.navdelbtn:hover {
+    color: #ea6464;
+    cursor: pointer;
+}
+
+ul i.navaddsubbtn {
+    position: absolute;
+    margin-top: 15px;
+    left: 205px;
+    color: #1E90FF;
+    z-index: 1;
+}
+
+ul i.navaddsubbtn:hover {
+    color: #9ffffd;
+    cursor: pointer;
+}
+
+aside i.asideaddbtn {
+    position: absolute;
+    color: #9ACD32;
+    left: 5px;
+    margin-top: 10px;
+}
+
+aside i.asideaddbtn:hover {
+    color: #bff799;
+    cursor: pointer;
+}
+
+aside i.asidedelbtn {
+    position: absolute;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+aside i.asidedelbtn:hover {
+    color: #ea6464;
+    cursor: pointer;
+}
+
+footer a {
+    margin: 0px 10px;
+}
+
+footer i.footeraddbtn {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+    color: #9ACD32;
+    margin-right: 5px;
+}
+
+footer i.footeraddbtn:hover {
+    color: #bff799;
+    cursor: pointer;
+}
+
+footer i.footerdelbtn {
+    position: relative;
+    bottom: 0px;
+    left: 5px;
+    color: #bd2121;
+    margin-right: 10px;
+}
+
+footer i.footerdelbtn:hover {
+    color: #ea6464;
+    cursor: pointer;
+}
+
+/* https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  blockquote p {
+    display: inline;
+  }
+
+  .jodit-xpath__item a {
+      color: #FFF !important;
+  }
+
+  .jodit-dialog_theme_dark .jodit-input {
+        color: #FFF !important;
+  }

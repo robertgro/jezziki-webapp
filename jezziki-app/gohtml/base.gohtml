@@ -1,0 +1,16 @@
+{{define "base"}}
+<!DOCTYPE html>
+    <html>
+        <head>
+            {{ template "meta" . }}
+            {{ template "title" . }}
+            {{ template "link" . }}
+            {{ template "script" . }}
+        </head>
+        <body>
+            {{ template "app" . }}
+            {{ template "scripts" . }}
+        </body>
+    </html>
+{{end}}
+{{template "base" . }}

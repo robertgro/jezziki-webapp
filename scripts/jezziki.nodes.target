@@ -1,0 +1,6 @@
+[Unit]
+Description=Jezziki App Nodes Worker Manager
+Requires=jezziki.node@1.service jezziki.node@2.service jezziki.node@3.service jezziki.node@4.service jezziki.node@5.service
+
+[Install]
+WantedBy=multi-user.target
